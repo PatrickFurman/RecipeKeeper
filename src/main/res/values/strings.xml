@@ -1,0 +1,46 @@
+<resources>
+    <string name="app_name">Recipe Keeper</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+    <string name="my_recipes">My Recipes</string>
+    <string name="add_recipe">New Recipe</string>
+    <string name="my_grocery_list">View Grocery List</string>
+    <string name="grocery_list_title">Grocery List</string>
+    <string name="add_grocery">New Grocery Item</string>
+    <string-array name="search_options">
+        <item>Filters</item>
+        <item>Hot Foods</item>
+        <item>Cold Foods</item>
+        <item>Spicy Foods</item>
+        <item>Sweet Foods</item>
+        <item>Savory Foods</item>
+        <item>Bitter Foods</item>
+    </string-array>
+    <string-array name="cuisine_options">
+        <item>Italian</item>
+        <item>Chinese</item>
+        <item>Indian</item>
+        <item>Mexican</item>
+        <item>American</item>
+        <item>Fusion</item>
+        <item>Japanese</item>
+        <item>French</item>
+        <item>African</item>
+        <item>Other</item>
+    </string-array>
+    <string name="directions">Directions</string>
+    <string name="recipe_title">Recipe Title</string>
+    <string name="submit_recipe">Submit Recipe</string>
+    <string name="ingredients">Ingredients</string>
+    <string name="amount">Amount w/ Units</string>
+    <string name="ingredient_name">Ingredient Name</string>
+    <string name="add_ingredient">Add Ingredient</string>
+    <string name="return_to_recipes">Return to Recipe</string>
+    <string name="description">Description</string>
+    <string name="edit_recipe">Edit Recipe</string>
+
+</resources>

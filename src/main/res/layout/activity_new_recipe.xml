@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".NewRecipeActivity">
+
+    <ToggleButton
+        android:id="@+id/toggleBitter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="80dp"
+        android:layout_marginEnd="16dp"
+        android:text="Bitter"
+        android:textOff="Bitter"
+        android:textOn="Bitter"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cuisine" />
+
+    <ToggleButton
+        android:id="@+id/toggleSweet"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="45dp"
+        android:layout_marginTop="80dp"
+        android:layout_marginEnd="45dp"
+        android:text="Sweet"
+        android:textOff="Sweet"
+        android:textOn="Sweet"
+        app:layout_constraintEnd_toStartOf="@+id/toggleBitter"
+        app:layout_constraintStart_toEndOf="@+id/toggleCold"
+        app:layout_constraintTop_toBottomOf="@+id/cuisine" />
+
+    <TextView
+        android:id="@+id/titleText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="44dp"
+        android:layout_marginEnd="128dp"
+        android:fontFamily="@font/droid_serif"
+        android:text="@string/add_recipe"
+        android:textAlignment="center"
+        android:textAllCaps="false"
+        android:textColor="@color/colorAccent"
+        android:textSize="40sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/recipeName"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:ems="10"
+        android:hint="@string/recipe_title"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/titleText" />
+
+    <EditText
+        android:id="@+id/directions"
+        android:layout_width="354dp"
+        android:layout_height="101dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:ems="10"
+        android:hint="@string/directions"
+        android:inputType="textMultiLine"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/recipeName" />
+
+    <Spinner
+        android:id="@+id/cuisine"
+        android:layout_width="354dp"
+        android:layout_height="20dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="16dp"
+        android:entries="@array/cuisine_options"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/directions" />
+
+    <ToggleButton
+        android:id="@+id/toggleHot"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginBottom="16dp"
+        android:checked="false"
+        android:text="Hot"
+        android:textColor="@color/colorBlack"
+        android:textOff="Hot"
+        android:textOn="Hot"
+        app:layout_constraintBottom_toTopOf="@+id/toggleCold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cuisine" />
+
+    <ToggleButton
+        android:id="@+id/toggleSpicy"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="45dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="45dp"
+        android:layout_marginBottom="16dp"
+        android:text="Spicy"
+        android:textOff="Spicy"
+        android:textOn="Spicy"
+        app:layout_constraintBottom_toTopOf="@+id/toggleSweet"
+        app:layout_constraintEnd_toStartOf="@+id/toggleSavory"
+        app:layout_constraintStart_toEndOf="@+id/toggleHot"
+        app:layout_constraintTop_toBottomOf="@+id/cuisine" />
+
+    <ToggleButton
+        android:id="@+id/toggleSavory"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
+        android:text="Savory"
+        android:textOff="Savory"
+        android:textOn="Savory"
+        app:layout_constraintBottom_toTopOf="@+id/toggleBitter"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cuisine" />
+
+    <ToggleButton
+        android:id="@+id/toggleCold"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="80dp"
+        android:text="Cold"
+        android:textOff="Cold"
+        android:textOn="Cold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cuisine" />
+
+    <Button
+        android:id="@+id/goToIngredientsButton"
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="32dp"
+        android:background="@drawable/buttonshape"
+        android:text="@string/ingredients"
+        android:textColor="#FFFFFF"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toggleSweet" />
+
+    <ImageButton
+        android:id="@+id/addImageButton"
+        android:layout_width="102dp"
+        android:layout_height="95dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:srcCompat="@tools:sample/backgrounds/scenic" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

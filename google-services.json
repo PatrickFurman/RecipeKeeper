@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "626837928770",
+    "firebase_url": "https://recipe-keeper-6598f.firebaseio.com",
+    "project_id": "recipe-keeper-6598f",
+    "storage_bucket": "recipe-keeper-6598f.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:626837928770:android:b0b4023841cf85f0b826db",
+        "android_client_info": {
+          "package_name": "com.recipes.recipekeeper"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "626837928770-5rb6s677ph7v550no5qs8vbuesrnto7m.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.recipes.recipekeeper",
+            "certificate_hash": "564312845f9e0b7897553e2990dab2269d0b1c88"
+          }
+        },
+        {
+          "client_id": "626837928770-phgmpkmljpec7lptrg0ahdvgpibi8irc.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDZVmgH5-My8buOCBHYM3sBE552JxuNpG0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "626837928770-phgmpkmljpec7lptrg0ahdvgpibi8irc.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
