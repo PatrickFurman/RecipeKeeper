@@ -42,5 +42,8 @@
     <string name="return_to_recipes">Return to Recipe</string>
     <string name="description">Description</string>
     <string name="edit_recipe">Edit Recipe</string>
+    <string name="new_grocery_item">Add Grocery Item</string>
+    <string name="error">Error</string>
+    <string name="google_maps_key">AIzaSyA0cKlwFT55stTutLWT7dHoAeM4w0VVHRA</string>
 
 </resources>

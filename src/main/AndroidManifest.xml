@@ -3,6 +3,11 @@
     xmlns:tools="http://schemas.android.com/tools"
     package="com.recipes.recipekeeper">
 
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/app_logo_round"
@@ -24,7 +29,12 @@
         <activity android:name=".ViewGroceryListActivity" />
         <activity android:name=".NewGroceryItemActivity" />
         <activity android:name=".IngredientsActivity" />
-        <activity android:name=".ViewRecipeDetailsActivity"></activity>
+        <activity android:name=".ViewRecipeDetailsActivity" />
+        <activity android:name=".MapViewActivity"></activity>
     </application>
+
+    <meta-data
+        android:name="com.google.android.geo.API_KEY"
+        android:value="@string/google_maps_key" />
 
 </manifest>

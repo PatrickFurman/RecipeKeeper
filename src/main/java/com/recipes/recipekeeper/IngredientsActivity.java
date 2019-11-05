@@ -23,6 +23,7 @@ public class IngredientsActivity extends AppCompatActivity {
     private String cuisine;
     private String directions;
     private String recipeTitle;
+    private String photoKey;
     private ArrayList<String> tags = new ArrayList<>(0);
 
     @Override
@@ -35,6 +36,7 @@ public class IngredientsActivity extends AppCompatActivity {
         // importing info from starting intent
         Bundle b = getIntent().getExtras();
         cuisine = b.get("Cuisine").toString();
+        photoKey = b.get("Photo Key").toString();
         directions = b.get("Directions").toString();
         recipeTitle = b.get("Recipe Title").toString();
         ArrayList<Integer> tagValues = (ArrayList<Integer>) b.get("Tags");
@@ -59,6 +61,7 @@ public class IngredientsActivity extends AppCompatActivity {
             public void onClick(View v) {
                 rootRef.child("Recipes").child(recipeTitle).child("Cuisine").setValue(cuisine);
                 rootRef.child("Recipes").child(recipeTitle).child("Directions").setValue(directions);
+                rootRef.child("Recipes").child(recipeTitle).child("Photo Key").setValue(photoKey);
                 for (int i = 0; i < table.getChildCount(); i++) {
                     TableRow row = (TableRow) table.getChildAt(i);
                     for (int j = 0; j < row.getChildCount() - 1; j++) {
